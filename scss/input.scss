@@ -1,0 +1,74 @@
+* {
+  border: red 1px solid;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: skyblue;
+  // background-image: url("../img/brick.jpg");
+  height: 1000px
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+.links {
+  align-items: center;
+  a {
+    padding: 0px 15px;
+    margin: 0px 15px;
+  }
+}
+
+.header-right {
+  margin-right: 35px;
+}
+
+.main
+{
+  h1 {
+    text-align: center;
+    margin-bottom: -16px;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.home-post {
+  text-align: center;
+}
+
+#statement {
+  justify-content: center;
+  width: 100%;
+}
+
+.word {
+  width: 50%;
+  justify-content: center;
+}
+
+
+
+footer {
+  position: absolute;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 0px;
+
+}
