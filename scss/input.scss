@@ -1,5 +1,5 @@
 * {
-  border: red 1px solid;
+  // border: red 1px solid;
 }
 
 .row {
@@ -13,17 +13,27 @@
 }
 
 body {
-  background-color: skyblue;
+  background-color: #20303B;
+  height: 100%;
+  color: skyblue;
   // background-image: url("../img/brick.jpg");
-  height: 1000px
 }
 
 ion-icon {
   font-size: 32px;
+  color: skyblue;
 }
 
 nav {
   justify-content: space-between;
+  background-color: #31356E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.website {
+  margin-top: 50px;
 }
 
 .links {
@@ -31,6 +41,7 @@ nav {
   a {
     padding: 0px 15px;
     margin: 0px 15px;
+    color: skyblue;
   }
 }
 
@@ -59,20 +70,54 @@ nav {
 }
 
 .word {
-  width: 50%;
+  width: 60%;
   justify-content: center;
 }
 
-.system-container {
-  justify-content: space-around;
-  height: 500px;
 
+
+// Nintendo section
+
+.nintendo {
+  text-align: center;
+  background-image: url("http://box5396.temp.domains/~rgtwishl/wp-content/uploads/2018/09/MARIOBACKROUND.png");
+  background-size: cover;
+  color: white;
+}
+
+.sony {
+  text-align: center;
+}
+
+.system-container {
+  justify-content: center;
 }
 
 .system-card {
-  width: 250px;
-  height: 250px;
+  text-align: center;
+  width: 275px;
+  height: 275px;
+  border: 1px solid lightgray;
+  margin: 0px 35px;
+  margin-bottom: 35px;
 }
+
+
+.nes, .n64, .gamecube, .wii, .switch, .ds{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-size: 275px 275px;
+  align-items: center;
+  h4 {
+    padding: 0px 15px;
+  }
+}
+
+.nes {
+  background-image: url("../img/nes.jpg");
+}
+
+
+
 
 
 
@@ -86,7 +131,6 @@ nav {
 
 
 footer {
-  position: absolute;
   justify-content: space-around;
   width: 100%;
   bottom: 0px;
