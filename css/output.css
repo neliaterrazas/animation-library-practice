@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth; }
+
+@font-face {
+  font-family: arcade;
+  src: url(../fonts/manaspc.ttf); }
 .row {
   display: flex;
   flex-direction: row; }
@@ -11,9 +17,14 @@ body {
   height: 100%;
   color: skyblue; }
 
+.website {
+  margin-top: 50px; }
+
 ion-icon {
   font-size: 32px;
-  color: skyblue; }
+  color: skyblue;
+  transition: .5s;
+  padding: 0px 7px; }
 
 nav {
   justify-content: space-between;
@@ -21,16 +32,16 @@ nav {
   position: fixed;
   top: 0;
   width: 100%; }
-
-.website {
-  margin-top: 50px; }
+  nav a:hover, nav ion-icon:hover {
+    color: #648ACC; }
 
 .links {
   align-items: center; }
   .links a {
     padding: 0px 15px;
     margin: 0px 15px;
-    color: skyblue; }
+    color: skyblue;
+    transition: .5s; }
 
 .header-right {
   margin-right: 35px; }
@@ -52,15 +63,6 @@ nav {
   width: 60%;
   justify-content: center; }
 
-.nintendo {
-  text-align: center;
-  background-image: url("http://box5396.temp.domains/~rgtwishl/wp-content/uploads/2018/09/MARIOBACKROUND.png");
-  background-size: cover;
-  color: white; }
-
-.sony {
-  text-align: center; }
-
 .system-container {
   justify-content: center; }
 
@@ -70,21 +72,92 @@ nav {
   height: 275px;
   border: 1px solid lightgray;
   margin: 0px 35px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  justify-content: center; }
 
-.nes, .n64, .gamecube, .wii, .switch, .ds {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+.nintendo {
+  text-align: center;
+  background-image: url("http://box5396.temp.domains/~rgtwishl/wp-content/uploads/2018/09/MARIOBACKROUND.png");
+  background-size: 100% 100%;
+  color: white;
+  font-family: arcade;
+  padding-top: 5px; }
+
+.nes, .snes, .n64, .gamecube, .wii, .switch, .gameboy, .gbadvance, .virtual, .ds, .nin3ds {
   background-size: 275px 275px;
   align-items: center; }
-  .nes h4, .n64 h4, .gamecube h4, .wii h4, .switch h4, .ds h4 {
+  .nes h4, .snes h4, .n64 h4, .gamecube h4, .wii h4, .switch h4, .gameboy h4, .gbadvance h4, .virtual h4, .ds h4, .nin3ds h4 {
     padding: 0px 15px; }
+  .nes a, .snes a, .n64 a, .gamecube a, .wii a, .switch a, .gameboy a, .gbadvance a, .virtual a, .ds a, .nin3ds a {
+    transition: .5s; }
+  .nes a:link, .snes a:link, .n64 a:link, .gamecube a:link, .wii a:link, .switch a:link, .gameboy a:link, .gbadvance a:link, .virtual a:link, .ds a:link, .nin3ds a:link {
+    color: white; }
+  .nes a:visited, .snes a:visited, .n64 a:visited, .gamecube a:visited, .wii a:visited, .switch a:visited, .gameboy a:visited, .gbadvance a:visited, .virtual a:visited, .ds a:visited, .nin3ds a:visited {
+    color: white; }
+  .nes a:hover, .snes a:hover, .n64 a:hover, .gamecube a:hover, .wii a:hover, .switch a:hover, .gameboy a:hover, .gbadvance a:hover, .virtual a:hover, .ds a:hover, .nin3ds a:hover {
+    color: #20303B;
+    background-color: white; }
+  .nes a:active, .snes a:active, .n64 a:active, .gamecube a:active, .wii a:active, .switch a:active, .gameboy a:active, .gbadvance a:active, .virtual a:active, .ds a:active, .nin3ds a:active {
+    color: white; }
 
 .nes {
-  background-image: url("../img/nes.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/nes.jpg"); }
+
+.snes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/snes.JPG"); }
+
+.n64 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/n64.JPG"); }
+
+.gamecube {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/gamecube.jpg"); }
+
+.wii {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wii.JPG"); }
+
+.switch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/switch.JPG"); }
+
+.gameboy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/gb.JPG"); }
+
+.gbadvance {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/gba.JPG"); }
+
+.virtual {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/virtual.JPG"); }
+
+.ds {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/ds.JPG"); }
+
+.nin3ds {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/3ds.JPG"); }
+
+.sony {
+  text-align: center; }
 
 footer {
   justify-content: space-around;
   width: 100%;
   bottom: 0px; }
+
+@media screen and (max-width: 1200px) {
+  .system-card {
+    margin: 0; } }
+@media screen and (max-width: 850px) {
+  .system-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue; }
+
+  ion-icon {
+    font-size: 24px; }
+
+  .header-right {
+    margin: 0px; }
+
+  .links a {
+    padding: 5px; } }
 
 /*# sourceMappingURL=output.css.map */
